@@ -1,0 +1,72 @@
+@import "_breakpoints";
+
+// Small devices
+// Specific: (< sm)
+@mixin sm {
+   @media (max-width: #{$screen-sm}) {
+       @content;
+   }
+}
+
+// (> sm)
+@mixin sm-plus {
+    @media (min-width: #{$screen-sm}) {
+        @content;
+     }
+ }
+
+
+// Medium devices
+// Specific: (> sm && < md)
+@mixin sm-to-md {
+   @media (max-width: #{$screen-md}) and (min-width: #{$screen-sm}) {
+       @content;
+   }
+}
+
+// (> md)
+@mixin md-plus {
+    @media (min-width: #{$screen-md}) {
+        @content;
+    }
+ }
+ 
+// Large devices
+// Specific: (> md && < lg)
+@mixin md-to-lg {
+   @media (max-width: #{$screen-lg}) and (min-width: #{$screen-md}) {
+       @content;
+   }
+}
+
+// (> lg)
+@mixin lg-plus {
+    @media (min-width: #{$screen-lg}) {
+        @content;
+    }
+ }
+
+// Extra large devices
+// Specific: (> lg-min && < xl-min)
+@mixin lg-to-xl {
+   @media (max-width: #{$screen-xl}) and (min-width: #{$screen-lg}) {
+       @content;
+   }
+}
+
+// (> xl)
+@mixin xl-plus {
+    @media (min-width: #{$screen-xl}) {
+        @content;
+   }
+ }
+
+ 
+// Custom devices (> custom)
+@mixin rwd($screen) {
+    @media (min-width: $screen+'em') {
+        @content;
+    }
+ }
+
+ 

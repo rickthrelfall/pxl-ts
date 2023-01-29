@@ -1,0 +1,36 @@
+@import "app-surface-header";
+@import "app-surface-main";
+@import "app-surface-status";
+
+@mixin app-layout__base {
+
+    .app {
+        display: grid;
+        // Grid will be defined in breakpoint/device specific layouts
+        
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /* _app-surface-header.scss */
+    .app-header {
+        display: initial;
+    }
+    @include app-surface-header;
+
+    /* _app-surface-main.scss */
+    .app-main {
+        display: initial;
+    }
+    @include app-surface-main;
+
+    /* _app-surface-status.scss */
+    .app-status {
+        display: initial;
+    }
+    @include app-surface-status;
+
+// /@mixin
+}

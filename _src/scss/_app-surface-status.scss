@@ -1,0 +1,20 @@
+@mixin app-surface-status {
+
+    .app-status {
+        background: app-color(footer-background);
+        color: app-color(footer-text);        
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        padding-left: $panel-padding-standard;
+        padding-right: $panel-padding-standard;       
+
+        .app-status__surface {
+            background: blue;
+        }
+    }
+
+// /@mixin
+}

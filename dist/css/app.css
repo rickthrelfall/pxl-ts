@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input,
+textarea {
+  -moz-user-select: text;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.3em;
+}
+
+p {
+  font-size: 14px;
+  margin-block-start: 0em;
+  margin-block-end: 0.5em;
+}
+
+a {
+  font-size: 14px;
+}
+
+.app {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* _app-surface-header.scss */
+.app-header {
+  display: initial;
+}
+
+.app-header {
+  background: #009060;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.app-header .app-header__surface {
+  background: red;
+}
+
+/* _app-surface-main.scss */
+.app-main {
+  display: initial;
+}
+
+.app-main {
+  background: #ccc;
+  color: #ddd;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.app-main .app-main__surface {
+  background: green;
+}
+
+/* _app-surface-status.scss */
+.app-status {
+  display: initial;
+}
+
+.app-status {
+  background: #555;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.app-status .app-status__surface {
+  background: blue;
+}
+
+.app {
+  grid-template-columns: 1fr;
+  grid-template-rows: 48px 1fr 48px;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.app-header {
+  grid-area: header;
+}
+
+.app-main {
+  grid-area: main;
+}
+
+.app-status {
+  grid-area: footer;
+}
+
+/*
+@include sm {
+    @include app-layout__sm;  
+}
+
+@include sm-plus {
+    @include app-layout__sm;
+}
+*/
+#playfield {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 20px solid #eee;
+  background-color: #000;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=app.css.map */

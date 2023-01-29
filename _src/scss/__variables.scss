@@ -1,0 +1,18 @@
+// Panels
+$panel-corner-radius-standard: app-grid-radius(grid-sm);
+
+// Header
+$header-height: app-grid-multi(3);
+
+// Footer
+$footer-height: app-grid-multi(3);
+
+// padding and radius
+$panel-padding-standard: app-grid(grid-std);
+
+// Article container
+$main-surface-max-width: 960px; //1260px;
+
+// Transition speeds
+$transition-fast: 0.3s;
+$transition-slow: 0.8s;

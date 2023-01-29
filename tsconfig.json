@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "module": "es2020",
+      "lib": ["DOM","ES6"],
+      "target": "es6",
+      "sourceMap": true,
+      "declaration": true,
+
+      // Enabled JSON import
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      
+      // Set output directory
+      "outDir": "./dist/js",
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "name": "pxl.ts",
+    "version": "1.0.0",
+    "description": "Game Engine",
+    "main": "index.js",
+    "engines": {
+      "node": ">=14.16.1",
+      "npm": ">=7.10.0",
+      "tsc": ">=4.2.4"
+    },
+    "scripts": {
+      "//css": " --- CSS --- WILDCARDS DO NOT WORK! ",
+      "css:dev-app": "sass ./_src/scss/app.scss:./dist/css/app.css",
+      "css:dev": "npm run css:dev-app",
+      
+      "//ts": " --- TYPESCRIPT --- ",
+      "ts:dev": "tsc",
+  
+      "//test": " --- TEST --- ",
+      "test": "echo \"Error: no test specified\" && exit 1",
+  
+      "//copy": " --- COPY TO DIST (GENERIC) --- ",
+      "copy:assets": "cp -r ./_src/assets/* dist",
+      "copy:html": "find ./_src -name '*.html' -type f -exec cp {} dist \\;",
+      "copy": "npm run copy:assets && npm run copy:html",
+  
+      "//build": "--- BUILD and COPY TO DIST --- ",
+      "build": "npm run css:dev && npm run ts:dev && npm run copy",
+  
+      "//serve": " --- SERVE --- ",
+      "serve": "http-server -c-1 -p 8000 ./dist/"
+    },
+    "author": "Rick Threlfall",
+    "license": "ISC"
+  }
+  

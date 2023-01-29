@@ -1,0 +1,28 @@
+// Colours
+$app-palette: (
+    header-background: #009060,
+    header-text: #fff,
+    footer-background: #555,
+    footer-text: #fff,
+    app-background: #ccc,
+    app-text-default: #ddd,
+    
+    panel-border: #fff,
+    panel-background: #fff,
+
+    playfield-border: #eee,
+    playfield-background: #000,
+);
+
+@function app-color($colorkey) {
+    @return map-get($app-palette, $colorkey);
+}
+
+// Shadows - specific
+@function panel-shadow() {
+    @return 0 1px 4px 0 rgba(0,0,0,.25);
+}
+
+@function mainmenu-shadow() {
+    @return 1px 2px 4px 2px rgba(0,0,0,.25);
+}

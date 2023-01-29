@@ -1,0 +1,23 @@
+@mixin app-surface-main {
+
+    .app-main {
+        background: app-color(app-background);
+        color: app-color(app-text-default);
+        
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        
+        padding: $panel-padding-standard;
+
+        .app-main__surface {
+            background: green;
+        }
+    }
+
+// /@mixin
+}

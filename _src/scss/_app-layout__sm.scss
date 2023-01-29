@@ -1,0 +1,25 @@
+@mixin app-layout__sm {
+
+    .app {
+        grid-template-columns: 1fr;
+        grid-template-rows: $header-height 1fr $footer-height;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    .app-header {
+        grid-area: header;
+    }
+
+    .app-main {
+        grid-area: main;
+    }
+
+    .app-status {
+        grid-area: footer;
+    }
+
+// /@mixin
+}

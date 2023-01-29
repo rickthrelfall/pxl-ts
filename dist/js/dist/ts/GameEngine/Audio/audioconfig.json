@@ -1,0 +1,11 @@
+{
+    "sfx": [
+        { "id": "player-weapon-01-fire", "description": "", "assetURI": "", "defaultvolumePercent": 100 },
+        { "id": "player-weapon-01-hit", "description": "", "assetURI": "", "defaultvolumePercent": 100 }
+    ],
+    "music": [
+        { "id": "home", "description": "", "assetURI": "", "defaultvolumePercent": 100 },
+        { "id": "playing", "description": "", "assetURI": "", "defaultvolumePercent": 80 },
+        { "id": "game-over", "description": "", "assetURI": "", "defaultvolumePercent": 100 }
+    ]
+}

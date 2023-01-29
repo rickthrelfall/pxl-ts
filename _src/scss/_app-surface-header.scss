@@ -1,0 +1,21 @@
+@mixin app-surface-header {
+
+    .app-header {
+        background: app-color(header-background);
+        color: app-color(header-text);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        padding-left: $panel-padding-standard;
+        padding-right: $panel-padding-standard;
+
+        .app-header__surface {
+            background: red;
+        }
+    
+    }
+
+// /@mixin
+}
